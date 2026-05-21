@@ -28,7 +28,9 @@ install_ros2() {
         ros-humble-desktop \
         python3-colcon-common-extensions
 
-    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+    if ! grep -q "source /opt/ros/humble/setup.bash" ~/.bashrc; then
+        echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+    fi
 
     mkdir -p ~/ros2_ws/src
 
