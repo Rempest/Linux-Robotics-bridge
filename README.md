@@ -79,6 +79,7 @@ linux-dev-setup/
 ```
 ---
 ##Installation
+
 **1. Clone Repository**
 ```bash
 git clone https://github.com/your-username/linux-dev-setup.git
