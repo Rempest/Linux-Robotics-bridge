@@ -70,18 +70,12 @@ linux-dev-setup/
 │   └── vscode-settings.json
 │
 ├── scripts/
-│   ├── check_os.sh
-│   ├── colors.sh
-│   ├── logger.sh
-│   └── banner.sh
-│
-├── assets/
-│   ├── demo.gif
-│   └── architecture.png
-│
-└── docs/
-    ├── supported-distros.md
-    └── troubleshooting.md
+    ├── check_os.sh
+    ├── colors.sh
+    ├── logger.sh
+    └── banner.sh
+
+
 ```
 **Installation**
 1. Clone Repository
