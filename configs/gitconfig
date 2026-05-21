@@ -1,1 +1,25 @@
+[user]
+    name = Raempest
+    email = thehuman130410@gmail.com
 
+[core]
+    editor = vim
+
+[init]
+    defaultBranch = main
+
+[color]
+    ui = auto
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    cm = commit
+    lg = log --oneline --graph --all
+
+[pull]
+    rebase = false
+
+[push]
+    autoSetupRemote = true
