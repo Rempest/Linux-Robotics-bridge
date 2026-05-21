@@ -1,1 +1,19 @@
+{
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
 
+    "terminal.integrated.defaultProfile.linux": "bash",
+
+    "files.autoSave": "afterDelay",
+
+    "workbench.colorTheme": "Default Dark+",
+
+    "editor.minimap.enabled": false,
+
+    "git.enableSmartCommit": true,
+
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+
+    "cmake.configureOnOpen": true
+}
