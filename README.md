@@ -82,3 +82,45 @@ linux-dev-setup/
 └── docs/
     ├── supported-distros.md
     └── troubleshooting.md
+```
+**Installation**
+1. Clone Repository
+```bash
+git clone https://github.com/your-username/linux-dev-setup.git
+cd linux-dev-setup
+```
+
+2. Make Scripts Executable
+```bash
+chmod +x install.sh
+chmod +x uninstall.sh
+```
+
+3. Run Installer
+```bash
+./install.sh
+```
+#Installed Components:
+**Core Packages**
+*curl*
+*wget*
+*git*
+*vim*
+*tmux*
+*htop*
+*build-essential*
+
+**Developer Tools**
+*Docker Engine*
+*Docker Compose*
+*Visual Studio Code*
+*ROS2 Humble*
+*colcon*
+
+**Environment Configuration**
+*Bash aliases*
+*tmux customization*
+*Git aliases*
+*VSCode settings*
+
+
