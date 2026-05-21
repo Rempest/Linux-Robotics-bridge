@@ -97,7 +97,8 @@ chmod +x uninstall.sh
 ./install.sh
 ```
 ---
-##Installed Components:
+## Installed Components:
+
 **Core Packages**
 *curl*
 *wget*
@@ -121,7 +122,7 @@ chmod +x uninstall.sh
 *VSCode settings*
 ---
 
-##Configuration Management
+## Configuration Management
 **Before applying new configurations, the installer automatically creates backups:**
 ```bash
 backups/
@@ -145,7 +146,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-##Project Goals
+## Project Goals
 
 **This project was created to:**
 
@@ -156,7 +157,7 @@ provide a clean modular Bash architecture,
 demonstrate Linux infrastructure engineering practices.
 
 
-##License
+## License
 
 **Licensed under the Apache License 2.0.**
 
