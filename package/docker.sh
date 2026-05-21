@@ -1,4 +1,5 @@
 #!/bin/bash
+
 install_docker(){
     echo "[INFO] Installing Docker..."
     sudo apt remove -y docker docker-engine docker.io containerd runc
@@ -9,16 +10,20 @@ install_docker(){
          ca-certificates \
          curl \
          gnupg \
-         isb-release \
+         lsb-release
+
     sudo mkdir -p /etc/apt/keyrings
+    
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
          sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+         
     echo \
       "deb [arch=$(dpkg --print-architecture) \
       signed-by=/etc/apt/keyrings/docker.gpg] \
       https://download.docker.com/linux/ubuntu \
       $(lsb_release -cs) stable" | \
       sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+      
     sudo apt update
 
     sudo apt install -y \
@@ -27,8 +32,7 @@ install_docker(){
          containerd.io \
          docker-buildx-plugin \
          docker-compose-plugin
+
     sudo usermod -aG docker $USER
-    echo "[SUCCES] Docker installed."
-    
-    
+    echo "[SUCCESS] Docker installed. (Please log out and log back in to apply docker group changes)"
 }
