@@ -77,24 +77,26 @@ linux-dev-setup/
 
 
 ```
-**Installation**
-1. Clone Repository
+---
+##Installation
+**1. Clone Repository**
 ```bash
 git clone https://github.com/your-username/linux-dev-setup.git
 cd linux-dev-setup
 ```
 
-2. Make Scripts Executable
+**2. Make Scripts Executable**
 ```bash
 chmod +x install.sh
 chmod +x uninstall.sh
 ```
 
-3. Run Installer
+**3. Run Installer**
 ```bash
 ./install.sh
 ```
-#Installed Components:
+---
+##Installed Components:
 **Core Packages**
 *curl*
 *wget*
@@ -116,5 +118,48 @@ chmod +x uninstall.sh
 *tmux customization*
 *Git aliases*
 *VSCode settings*
+---
+
+##Configuration Management
+**Before applying new configurations, the installer automatically creates backups:**
+```bash
+backups/
+├── bashrc.backup
+├── tmux.conf.backup
+└── gitconfig.backup
+```
+**Uninstall**
+To remove installed components and restore backups:
+```bash
+./uninstall.sh
+```
+**Example Workflow**
+```bash
+git clone https://github.com/your-username/linux-dev-setup.git
+
+cd linux-dev-setup
+
+chmod +x install.sh
+
+./install.sh
+```
+
+##Project Goals
+
+**This project was created to:**
+
+simplify Linux workstation setup,
+automate robotics environment provisioning,
+improve reproducibility,
+provide a clean modular Bash architecture,
+demonstrate Linux infrastructure engineering practices.
 
 
+##License
+
+**Licensed under the Apache License 2.0.**
+
+See the LICENSE file for more information.
+
+**Disclaimer**
+This project modifies system packages and user configuration files.
