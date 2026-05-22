@@ -82,7 +82,7 @@ linux-dev-setup/
 
 **1. Clone Repository**
 ```bash
-git clone https://github.com/your-username/linux-dev-setup.git
+git clone https://github.com/Rempest/linux-dev-setup.git
 cd linux-dev-setup
 ```
 
@@ -137,7 +137,7 @@ To remove installed components and restore backups:
 ```
 **Example Workflow**
 ```bash
-git clone https://github.com/your-username/linux-dev-setup.git
+git clone https://github.com/Rempest/linux-dev-setup.git
 
 cd linux-dev-setup
 
