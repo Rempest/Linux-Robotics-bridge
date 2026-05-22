@@ -11,7 +11,7 @@ source scripts/check_os.sh
 source scripts/banner.sh
 
 
-
+source packages/gazebo.sh
 source packages/common.sh
 source packages/tools.sh
 source packages/docker.sh
@@ -35,7 +35,7 @@ install_tools
 install_docker
 install_vscode
 install_ros2
-
+install_gazebo
 
 
 log_info "Backing up existing configs..."
